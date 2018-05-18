@@ -1,0 +1,16 @@
+git checkout master
+echo "0.5.1" > version.txt
+git add version.txt
+git commit -m "Release 0.5.1"
+git push origin master
+
+git checkout master
+git checkout -b develop
+echo "0.6rc1" > version.txt
+git add version.txt
+git commit -m "0.6 pre-release"
+git push origin develop
+
+git clone https://github.com/axilleas/github-essentials-v2.wiki.git
+cd github-essentials.wiki
+gollum
