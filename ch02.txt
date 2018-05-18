@@ -12,5 +12,5 @@ git commit -m "0.6 pre-release"
 git push origin develop
 
 git clone https://github.com/axilleas/github-essentials-v2.wiki.git
-cd github-essentials.wiki
+cd github-essentials-v2.wiki
 gollum
