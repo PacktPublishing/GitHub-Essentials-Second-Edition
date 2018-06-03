@@ -1,0 +1,17 @@
+git checkout -b add-gitignore
+echo 'password' > .gitignore
+git add .gitignore
+git commit -m 'Add .gitignore'
+git push origin add-gitignore
+
+git checkout update-readme
+sed -i 's/Test change/For more info, check the wiki/' README.md # replace text
+git add README.md
+git commit -m 'Correct line in README.md'
+git push origin update-readme
+
+git checkout master
+git checkout -b fix-issue-2
+
+git commit -m 'Demo example of closing issues. Closes #2'
+git push origin fix-issue-2

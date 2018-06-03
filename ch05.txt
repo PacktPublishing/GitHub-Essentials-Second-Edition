@@ -1,0 +1,30 @@
+git clone git@github.com:username/username.github.io.git
+cd username.github.io
+echo 'Welcome to my first page!' > index.html
+git add index.html
+git commit -m 'Add the first webpage'
+git push -u origin master
+
+git checkout -b gh-pages
+echo 'Welcome to my first project page!' > index.html
+git add index.html
+git commit -m 'Add index.html page'
+git push origin gh-pages
+
+jekyll new website
+cd website
+ls -la
+jekyll serve --watch
+
+git init
+git add .
+git commit -m 'Init commit using Jekyll'
+git remote add origin git@github.com:username/username.github.io.git
+git push origin master
+
+git checkout master
+git pull origin master
+cp _posts/2018-06-02-welcome-to-jekyll.markdown _posts/2018-06-02-testing-github-metadata-with-jekyll.markdown
+git add .
+git commit -m "Add new post"
+git push origin master

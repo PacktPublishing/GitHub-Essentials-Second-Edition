@@ -1,0 +1,4 @@
+git clone https://github.com/diaspora/diaspora
+du -sh diaspora
+rm -rf diaspora/.git
+du -sh diaspora
